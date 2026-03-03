@@ -1,0 +1,10 @@
+/*
+Enter your query here.
+*/
+SELECT
+MAX(salary*months) as total_earnings,
+COUNT(*)
+FROM Employee
+GROUP BY salary*months
+ORDER BY total_earnings DESC
+LIMIT 1;
