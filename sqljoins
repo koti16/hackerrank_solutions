@@ -1,0 +1,37 @@
+--1.Show employee names with their department names.
+SELECT employees.name, departments.dept_name
+FROM employees
+INNER JOIN departments
+ON employees.dept_id = departments.dept_id;
+--2.Show all employees even if they don't have a department.
+SELECT employees.name, departments.dept_name
+FROM employees
+LEFT JOIN departments
+ON employees.dept_id = departments.dept_id;
+--3.Show all departments even if no employee works there.
+SELECT employees.name, departments.dept_name
+FROM employees
+RIGHT JOIN departments
+ON employees.dept_id = departments.dept_id;
+--Show all employees and all departments.
+SELECT employees.name, departments.dept_name
+FROM employees
+FULL JOIN departments
+ON employees.dept_id = departments.dept_id;
+--5.Show employees working in IT department.
+SELECT employees.name
+FROM employees
+JOIN departments
+ON employees.dept_id = departments.dept_id
+WHERE departments.dept_name = 'IT';
+
+--6.Show employee name and department name sorted by employee name.
+SELECT e.name, d.dept_name
+FROM employees e
+JOIN departments d
+ON e.dept_id = d.dept_id
+ORDER BY e.name;
+--7.Find Employees Without Department
+SELECT name
+FROM employees
+WHERE dept_id IS NULL;
