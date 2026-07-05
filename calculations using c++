@@ -1,0 +1,37 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main ()
+{
+    int a , b ;
+    int sum=0;
+    int difference =0;
+    float product =1;float quotient;
+    int remainder;
+    
+    cout<<"enter two numbers:"<<endl;
+    cin>>a;
+    cin>>b;
+    
+    sum =a+b;
+    difference = a-b;
+    product = a*b;
+    
+    quotient = a/b;
+    
+    remainder = a%b;
+    
+    cout<<"sum:"<<sum<<endl;
+    
+    cout<<"difference:"<<difference<<endl;
+    
+    cout<<"product:"<< product<<endl;
+    
+    cout<<"quotient"<< quotient <<endl;
+    
+    cout<<"remainder:" <<remainder <<endl;
+    
+    return 0;
+    
+}
