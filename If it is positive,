@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+    /*p1.
+    int a;
+    cout<<"enter a number:"<<endl;
+    cin>>a;
+    
+    if(a>0){
+        cout<<"postive.";
+    }
+    else
+    {
+        cout<<"Negatiove.";
+    }
+return o;
+}
