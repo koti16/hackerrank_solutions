@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+    int age;
+    int salary;
+    cout<<"enter the age:"<<endl;
+    cin>>age;
+    cout<<"enter the salary:"<<endl;
+    cin>>salary;
+    
+    if(age>=18){
+        if(salary>=25000){
+            cout<<"loan Approved"<<endl;
+        }
+        else
+        {
+            cout<<"salary Too Low"<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Age Not Eligible"<<endl;
+    }
+    
+    
+    return 0;
+}
