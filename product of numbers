@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+//count digits
+int main ()
+{
+    int n,product=1;
+    cout<<"Enter a number:"<<endl;
+    cin>>n;
+    while(n){
+        
+        product *=n%10;
+        n/=10;
+    }
+    cout<<product<<endl;
+    
+    return 0;
+}
