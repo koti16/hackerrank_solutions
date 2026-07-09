@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,next;
+     cout<<"Enter the number:"<<endl;
+    cin>>n;
+    int first =0;
+    cout<<"Fibonacci algorithm\n";
+    int second = 1;
+    cout << first << " \n";
+    cout << second << " \n";
+    for(int i =1;i<=n;i++){
+       
+        next = first+second;
+        cout<<next<<endl;
+        first = second;
+        second = next;
+        
+         
+    }
+    
+    
+    return 0;
+}
+    
+    
