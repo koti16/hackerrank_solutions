@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int original,digit,reverse=0;
+    
+    
+    cout<<"Enter the number:"<<endl;
+    
+    cin>>original;
+    
+    int copy = orginal;
+    
+    while(original){
+    digit = original%10;
+    reverse =reverse *10 +digit;
+    original /=10;
+    }
+    
+    
+    if(copy == reverse){
+        cout<<"palindrome"<<endl;
+    }
+    else {
+        cout<<"not palindrome"<<endl;
+    }
+    
+    return 0;
+}
+    
