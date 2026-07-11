@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+int main (){
+    int arr[100],n,t;
+    bool Found = false;
+    cout<<"enter no.of elements:"<<endl;
+    cin>>n;
+    
+    
+    cout<<"array elements are :"<<endl;
+    for(int i=0;i<n;i++){
+       cin>>arr[i];
+    }
+    cout<<"Enter target element:"<<endl;
+    cin>>t;
+    
+    //display the target
+    for(int i =0;i<n;i++){
+        if(arr[i]==t){
+            cout<<"element Found at index "<< i<<endl;
+            Found =true;
+            break;
+        }
+    }
+    if(!Found){
+        cout<<"element not found";
+    }
+    
+    return 0;
+    
+}
+
