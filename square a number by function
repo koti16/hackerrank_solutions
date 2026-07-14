@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+class Solution {
+    public:
+    
+    int square(int n){
+        
+    
+        
+        return n*n;
+    }
+};
+
+int main () {
+    int n;
+    
+    Solution s1;
+    
+    int result = s1.square(3);
+    
+    cout<<"square is:"<<result<<endl;
+    
+    return 0;
+}
